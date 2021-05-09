@@ -9,10 +9,11 @@
 <body>
     
     <script>
-        var n1 = 1045.5
-        n1.toLocaleString('pt-br',{style:'currency', currency:'BRL'})
-        document.write(n1)
-    
+        var n1 = Number.parseFloat(window.prompt('Escreva um número: '))
+        var n2 = Number.parseFloat(window.prompt('Escreva outro número: '))
+        var s = n1+n2
+        alert(`A soma dos numeros é: ${s}` )
     </script>
+        
 </body>
 </html>
