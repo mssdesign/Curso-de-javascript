@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            max-width: 1000px;
-            position: float;
-        }
-        
-        div#area {    
+        .area {           
+            position: fixed;
+            top: 50%;
+            left: 50%;            
+            transform:translate(-50%, -50%);
             font: bolder 20pt Arial;
             background: rgb(42,139,42);
             color: white;
             width: 200px;
-            height: 200px;
-            line-height: 200px;
+            height: 200px;            
             text-align: center;
-        }
+            line-height: 200px;
+        }           
     </style>
 </head>
 <body>
-    <div id="area">
-        Interaja...
-    </div>
+        <div class="area" onclick="clicar()">
+            Interaja...
+        </div>    
+
+    <script>        
+        function clicar() {
+            var area = document.querySelector('.area')
+            area.innerText = 'clicou'
+        }
+    </script>
+
 </body>
 </html>
