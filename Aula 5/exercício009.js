@@ -5,3 +5,5 @@ if (pais == 'Brasil'){
 } else {
     console.log('Você é Estrangeiro!')
 }
+
+// SEM RELAÇÃO COMO EXERCÍCIO 10!!
