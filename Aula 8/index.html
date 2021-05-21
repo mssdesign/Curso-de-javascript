@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRock</title>
+    <style>
+        * {
+            margin: 0;
+            overflow-y: hidden;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;            
+        }
+
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .rock {            
+            width: 0;
+            height: 0;
+            background-color: #fff;
+            border-left: 250px solid transparent;
+            border-right: 250px solid transparent;
+            border-bottom: 500px solid rgb(184, 144, 12);
+        }
+
+        /* fixando a posição do elemento */
+        .rock #face {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+            transform: translateX(-50px);
+        }
+
+        /* fixando a posição do elemento */
+        .rock #frase {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 700px;
+            transform: translateX(-50px);
+        }
+    </style>
+</head>
+
+<!-- Ao colocar o alert fora do body e do script não funcionou -->
+<body  onload="alert('Olá, eu sou o iRock');">
+    <div class="container">
+        <div class="rock">
+            <p id="face">o . o</p>
+            <p id="frase">iRock</p>
+        </div>        
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+</html>
