@@ -1,3 +1,5 @@
+<!-- INTERAÇÃO COM PEDRAS -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,65 +10,42 @@
     <style>
         * {
             margin: 0;
-            overflow-y: hidden;
+            overflow: hidden;
             box-sizing: border-box;
         }
 
         body {
+            position: absolute;         
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 50px;            
-        }
-
-        .container {
-            position: fixed;
+            font-size: 50px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
 
-        .rock {            
-            width: 0;
-            height: 0;
-            background-color: #fff;
-            border-left: 250px solid transparent;
-            border-right: 250px solid transparent;
-            border-bottom: 500px solid rgb(184, 144, 12);
-        }
-
-        /* fixando a posição do elemento */
-        .rock #face {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .rock {
+            background: url('rock/rock.png') no-repeat center;
             height: 500px;
-            transform: translateX(-50px);
+            width: 500px;
         }
 
-        /* fixando a posição do elemento */
-        .rock #frase {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 700px;
-            transform: translateX(-50px);
+        /* As classes abaixo devem estar sem espaço no meio .rock.active*/
+        .rock.active {
+            background: url('rock/rock_s.png') no-repeat center;
+            height: 500px;
+            width: 500px;
         }
+        /* SEM O height e width o background não aparece */
     </style>
 </head>
 
 <!-- Ao colocar o alert fora do body e do script não funcionou -->
-<body  onload="alert('Olá, eu sou o iRock');">
+<body  onload="eu();">
     <div class="container">
-        <div class="rock">
-            <p id="face">o . o</p>
-            <p id="frase">iRock</p>
-        </div>        
+        <div class="rock" onclick="askname();"></div>        
     </div>
 
-    <script>
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
