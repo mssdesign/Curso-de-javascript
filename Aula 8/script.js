@@ -6,11 +6,12 @@ function eu() {
 }
 
 function askname() {
-    rock.classList.add('active') 
-
     var usrName = prompt('Qual é o seu nome?',);
-       
-    window.alert('Bem vindo, ' + usrName + '!');        
+
+    if (usrName) {
+        alert('Prazer em conhecer você,' + usrName + '!');
+        rock.classList.add('active')
+    }    
 }
 
  
