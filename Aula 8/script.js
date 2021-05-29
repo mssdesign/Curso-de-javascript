@@ -3,6 +3,7 @@ const rock = document.querySelector('.rock');
 function eu() {
     alert('Olá, eu sou irock');
     alert('Clique em mim para conversarmos');
+    setTimeout("alert('Wake up!');", 6000);
 }
 
 function askname() {
@@ -13,6 +14,8 @@ function askname() {
         rock.classList.add('active')
     }    
 }
+
+
 
  
     
