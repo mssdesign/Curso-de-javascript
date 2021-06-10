@@ -16,8 +16,6 @@ contar.addEventListener('click', () => {
         somar()
     } else if (n_inicio > n_fim) {
         diminuir()
-    } else if (n_passo = 0) {
-        console.innerText = `Digite um passo diferente de 0`
     }
 
     function somar() {
@@ -37,23 +35,9 @@ contar.addEventListener('click', () => {
     }
 })
 
-
-
-// function somar() {
-//     if(res < n_fim) {
-//         console.innerText = `Contando: `;
-//         console.innerText += res;
-//         res = (res + n_passo);
-//         console.innerText += `👉${res}👉`;            
-//         somar();
-//     } else if (res > n_fim) {
-//         console.innerText = `Contando: `;
-//         console.innerText += res;
-//         res = (res - n_passo);
-//         console.innerText += `👉${res}👉`;            
-//         somar();
-//     }        
-// }
+// resolver caso n_passo 0
+// Aprender a debuggar
+// 👉
 
 
 
