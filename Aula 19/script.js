@@ -33,7 +33,7 @@ contar.addEventListener('click', () => {
             res = (res + n_passo)                       
             somar()
         } else {
-            console.innerText += `🏆`
+            console.innerText += `${n_fim}👉🏆`
         }        
     }
 
@@ -43,7 +43,7 @@ contar.addEventListener('click', () => {
             res = (res - n_passo)            
             diminuir()
         } else {
-            console.innerText += `🏆`
+            console.innerText += `${n_fim}👉🏆`
         }        
     }
 })
