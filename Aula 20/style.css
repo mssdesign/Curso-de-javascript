@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: steelblue;
+    flex-direction: column;
+}
+
+h1, #footer {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background-color: #fff;
+    padding-left: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+    font-weight: bold;
+    margin: 0;
+    padding-left: 25px;    
+}
+
+select, button {
+    position: absolute;
+    top: 90px;
+    height: auto;
+    width: 100px;
+}
+
+button {
+    top: 50px;
+}
+
+#analisar {
+    background-color: steelblue;
+    border: none;
+    color: #fff;
+    font-weight: normal;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#analisar:hover {
+    transform: scale(0.98);
+}
+
