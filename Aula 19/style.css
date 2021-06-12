@@ -71,3 +71,7 @@ input {
     transform: scale(0.98);
 }
 
+#console {
+    width: 480px;
+}
+

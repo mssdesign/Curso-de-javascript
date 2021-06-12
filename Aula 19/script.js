@@ -13,7 +13,7 @@ contar.addEventListener('click', () => {
 
     console.innerText = `Contando: `
     
-    if (n_inicio < n_fim && n_passo > 0) {
+    if (n_inicio < n_fim && n_passo != 0) {
         somar()
     } else if (n_inicio > n_fim && n_passo != 0) {
         diminuir()
@@ -33,7 +33,7 @@ contar.addEventListener('click', () => {
             res = (res + n_passo)                       
             somar()
         } else {
-            console.innerText += `${n_fim}👉🏆`
+            console.innerText += `🏆`
         }        
     }
 
@@ -43,11 +43,7 @@ contar.addEventListener('click', () => {
             res = (res - n_passo)            
             diminuir()
         } else {
-            console.innerText += `${n_fim}👉🏆`
+            console.innerText += `🏆`
         }        
     }
 })
-
-function denovo() {
-    window.location.reload()
-}
