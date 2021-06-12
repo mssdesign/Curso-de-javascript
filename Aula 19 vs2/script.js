@@ -10,6 +10,7 @@ btn.addEventListener('click', () => {
     for(let i = 0; i <= 10; i++) {
         var res = i*(number_n)        
         tabuada.innerHTML +=`${number_n} x ${i} = ${res}<br><br>`;
-        btn.disabled = true
+        btn.disabled = true;
+        btn.style = 'cursor: not-allowed';
     }       
 })
