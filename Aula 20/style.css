@@ -41,11 +41,44 @@ select, button {
     position: absolute;
     top: 90px;
     height: auto;
+    width: 200px;
+}
+
+#number {
     width: 100px;
 }
 
-button {
-    top: 50px;
+#mais {
+    width: 30px;
+    top: 16.5px;
+    height: 22px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#mais:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+#mais:active {
+    transform: scale(0.98);
+}
+
+#console {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    flex-wrap: wrap;
+    word-wrap: break-word;
 }
 
 #analisar {
@@ -57,9 +90,23 @@ button {
     padding: 5px 15px;
     cursor: pointer;
     margin-top: 5px;
+    top: 50px;
 }
 
-#analisar:hover {
+#analisar:hover, #reload:hover {
     transform: scale(0.98);
 }
+
+#reload {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: 12.5px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+
 
