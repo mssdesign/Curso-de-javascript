@@ -13,15 +13,15 @@ contar.addEventListener('click', () => {
 
     console.innerText = `Contando: `
     
-    if (n_inicio < n_fim && n_passo != 0) {
+    if (n_inicio < n_fim && n_passo != 0 && n_passo > 0) {
         somar()
-    } else if (n_inicio > n_fim && n_passo != 0) {
+    } else if (n_inicio > n_fim && n_passo != 0 && n_passo > 0) {
         diminuir()
-    } else if (n_inicio == n_fim && n_passo != 0) {
+    } else if (n_inicio == n_fim && n_passo != 0 && n_passo > 0) {
         alert('Defina um fim maior ou menor que o início!');
         console.innerText = ` Não foi possível contar :/`;
         tentar.style = "background-color: #FF0000";       
-    } else if (n_passo == 0) {
+    } else if (n_passo <= 0 || n_passo == 0) {
         alert('Defina um passo maior que zero!');
         console.innerText = ` Não foi possível contar :/`;
         tentar.style = "background-color: #FF0000";
