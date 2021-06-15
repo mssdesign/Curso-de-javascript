@@ -4,6 +4,7 @@ const select = document.getElementById('select');
 const console = document.getElementById('console');
 const list = document.getElementById('list');
 const mais = document.getElementById('mais');
+const reload = document.getElementById('reload');
 var array = [];
 
 mais.addEventListener('click', () => {
@@ -38,6 +39,12 @@ analisar.addEventListener('click', () => {
     list.innerHTML += `<br><li>O maior valor digitado foi: ${high}.</li>`;
 
     list.innerHTML += `<br><li>O menor valor digitado foi: ${less}.</li>`;
+
+    mais.disabled = true;
+    mais.style = 'background-color: #cecece; cursor: not-allowed;';
+
+    reload.classList.add('on');
+    reload.innerHTML += 'Tente novamente';
 })
 
 function buttonDisabled() {

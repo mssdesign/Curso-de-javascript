@@ -34,7 +34,8 @@ h1, #footer {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
     font-weight: bold;
     margin: 0;
-    padding-left: 25px;    
+    padding-left: 25px;
+    overflow: hidden;    
 }
 
 select, button {
@@ -93,20 +94,32 @@ select, button {
     top: 50px;
 }
 
-#analisar:hover, #reload:hover {
+#analisar:hover, .magic:hover {
     transform: scale(0.98);
 }
 
-#reload {
+button#reload {
     display: flex;
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    right: 10px;
-    top: 12.5px;
+    height: 35px;
+    width: 45px;
+    right: 20px;
+    top: 10px;
     cursor: pointer;
     border: 1px solid black;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1;    
 }
 
+button img {
+    height: 30px;
+    width: 30px;
+}
 
-
+button#reload.on {
+    transform: translateY(430px);
+    transition: 10ms ease-in-out;
+    width: 170px;
+    background-color: rgba(200, 0, 0, 0.466);
+    color: #fff;    
+}
