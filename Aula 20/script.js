@@ -7,17 +7,45 @@ const mais = document.getElementById('mais');
 var array = [];
 
 mais.addEventListener('click', () => {
-    var i = Number(0)
-    var i = i++
-    var n = Number(number.value)
-    array.push(n)
-    select.innerHTML += `<option> Valor ${n} adicionado.</option>`
+    var n = Number(number.value);
+
+    array.push(n);
+
+    select.innerHTML += `<option> Valor ${n} adicionado.</option>`;
+
+    buttonEnable()
 })
 
 analisar.addEventListener('click', () => {
-    var max = Math.max(null, array)
-    var som = array[1] + array[0]
+    buttonDisabled()
+
+    var qnt = Number(array.length)
+
+    var som = array.reduce((a, b) => a + b);
+
+    var med = som/qnt;
+
+    var high = Math.max.apply(Math, array);
+
+    var less = Math.min.apply(Math, array);
 
     list.innerHTML += `<br><li>Ao todo, temos ${array.length} números cadastrados.</li>`;
-    list.innerHTML += `<br><li>${som}</li>`;
+
+    list.innerHTML += `<br><li>Somando todos os valores temos: ${som}.</li>`;
+
+    list.innerHTML += `<br><li>A média dos valores digitados é: ${med}.</li>`;
+
+    list.innerHTML += `<br><li>O maior valor digitado foi: ${high}.</li>`;
+
+    list.innerHTML += `<br><li>O menor valor digitado foi: ${less}.</li>`;
 })
+
+function buttonDisabled() {
+    analisar.disabled = true;
+    analisar.style = 'background-color: #cecece; cursor: not-allowed;';
+}
+
+function buttonEnable() {
+    analisar.disabled = false;
+    analisar.style = 'background-color: #4682B4; cursor: pointer;';
+}

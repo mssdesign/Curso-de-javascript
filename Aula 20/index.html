@@ -11,11 +11,11 @@
     <h1>Analisador de números</h1>
 
     <div class="container">
-        <p>Informe um número entre 1 e 100: <input type="number" id="number"><button id="mais">+</button> <a onclick="window.location.reload()" id="reload"><img src="reload.svg" alt="reload"></a></p>
+        <p>Adicione números entre 1 e 100: <input type="number" id="number"><button id="mais">+</button> <a onclick="window.location.reload()" id="reload"><img src="reload.svg" alt="reload"></a></p>
 
-        <button id="analisar">Analisar</button>
+        <button id="analisar" onclick="buttonDisabled()">Analisar</button>
 
-        <select id="select" size="10"></select>
+        <select id="select" size="7"></select>
 
         <div id="console">
             <ul id="list"></ul>
