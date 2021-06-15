@@ -56,3 +56,5 @@ function buttonEnable() {
     analisar.disabled = false;
     analisar.style = 'background-color: #4682B4; cursor: pointer;';
 }
+
+//Não pode adicionar o mesmo valor
