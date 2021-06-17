@@ -8,13 +8,28 @@ const reload = document.getElementById('reload');
 var array = [];
 
 mais.addEventListener('click', () => {
-    var n = Number(number.value);
+    var num = Number(number.value);
 
-    array.push(n);
+    //validação de número
+    if (num < 1 || num > 100) {
+        alert('Digite um número entre 1 e 100')
+        return
+    } else if (array.indexOf(num) != -1) {
+        alert('Digite outro valor!')
+        return
+    } else {        
+        var n = num
+    }
+
+    array.push(n); //enviando número para array
 
     select.innerHTML += `<option> Valor ${n} adicionado.</option>`;
 
     buttonEnable()
+
+    number.value = ' ' //Para limpar a caixa de texto
+
+    number.focus() //Para fazer a caixa de texto ativar
 })
 
 analisar.addEventListener('click', () => {
@@ -56,5 +71,3 @@ function buttonEnable() {
     analisar.disabled = false;
     analisar.style = 'background-color: #4682B4; cursor: pointer;';
 }
-
-//Não pode adicionar o mesmo valor
