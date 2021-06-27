@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: steelblue;
+    flex-direction: column;
+}
+
+h1, #footer {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    padding-left: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+    font-weight: bold;
+    margin: 0;
+    padding-left: 25px;
+    overflow: hidden;
+}
+
+select, button {
+    position: absolute;
+    top: 90px;
+    height: auto;
+    width: 200px;
+}
+
+#number {
+    width: 100px;
+}
+
+#mais {
+    width: 30px;
+    top: 16.5px;
+    height: 22px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#mais:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+#mais:active {
+    transform: scale(0.98);
+}
+
+#console {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+#analisar {
+    background-color: #cecece;
+    border: none;
+    color: #fff;
+    font-weight: normal;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: not-allowed;
+    margin-top: 5px;
+    top: 50px;
+}
+
+#analisar:hover, .magic:hover {
+    transform: scale(0.98);
+}
+
+button#reload {
+    display: flex;
+    height: 35px;
+    width: 45px;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1;    
+}
+
+button img {
+    height: 30px;
+    width: 30px;
+}
+
+button#reload.on {
+    transform: translateY(430px);
+    transition: 10ms ease-in-out;
+    width: 170px;
+    background-color: rgba(200, 0, 0, 0.466);
+    color: #fff;    
+}
